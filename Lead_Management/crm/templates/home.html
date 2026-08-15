@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="text-center mb-5">
+
+    <h1 class="fw-bold display-5">
+        Lead Management System
+    </h1>
+
+    <p class="text-muted fs-5">
+        Manage Products, Regions and Leads from one dashboard
+    </p>
+
+</div>
+
+<div class="row g-4">
+
+    <!-- Products -->
+
+    <div class="col-md-4">
+
+        <div class="card shadow-lg h-100">
+
+            <div class="card-body text-center p-4">
+
+                <h3 class="fw-bold">
+                    Products
+                </h3>
+
+                <p class="text-muted">
+                    Add, update and manage product records.
+                </p>
+
+                <a href="{% url 'product_list' %}"
+                   class="btn btn-theme">
+
+                    Open Products
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Regions -->
+
+    <div class="col-md-4">
+
+        <div class="card shadow-lg h-100">
+
+            <div class="card-body text-center p-4">
+
+                <h3 class="fw-bold">
+                    Regions
+                </h3>
+
+                <p class="text-muted">
+                    Maintain region information and mappings.
+                </p>
+
+                <a href="{% url 'region_list' %}"
+                   class="btn btn-theme">
+
+                    Open Regions
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Leads -->
+
+    <div class="col-md-4">
+
+        <div class="card shadow-lg h-100">
+
+            <div class="card-body text-center p-4">
+
+                <h3 class="fw-bold">
+                    Leads
+                </h3>
+
+                <p class="text-muted">
+                    Create, track and manage customer leads.
+                </p>
+
+                <a href="{% url 'lead_list' %}"
+                   class="btn btn-theme">
+
+                    Open Leads
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
